@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
 let loadtime = 0;
 let sumPrices = 0;
 function makeTable(data){
-    // debugger;
     let table=$("<table class='table table-bordered' />");
     let body=$('<tbody/>');
     for (let i = 0; i < 5; i++){
@@ -44,7 +43,6 @@ function makeRow(data){
 }
 
 function loadData(){
-    debugger;
     fetch('https://dummyjson.com/products')
     .then(p=>p.json())
     .then(data=>{

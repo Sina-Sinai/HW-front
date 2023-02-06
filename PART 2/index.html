@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="navbar bg-dark-subtle rounded-top">
+            <button class="btn btn-dark ms-3">Add New</button>
+            <div class="dropdown me-3">
+                Show
+                <button id="gridd" class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">5</button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" onclick="drop1()" href="#">5</a></li>
+                  <li><a class="dropdown-item" onclick="drop2()" href="#">10</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="info-grid" class="pb-0"></div>
+        <div class="navbar bg-dark-subtle rounded-bottom mt-0 pb-0">
+            <p>Showing <span id="showing">5</span> out of 25 entries</p>
+            <div class="d-flex flex-row">
+                <button class="btn btn-dark m-1" id="but1"><<</button>
+                <button class="btn btn-dark m-1" id="but2">1</button>
+                <button class="btn btn-dark m-1" id="but3">2</button>
+                <button class="btn btn-dark m-1" id="but4">3</button>
+                <button class="btn btn-dark m-1" id="but5">4</button>
+                <button class="btn btn-dark m-1" id="but6">5</button>
+                <button class="btn btn-dark m-1" id="but7">>></button>
+            </div>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>
+
